@@ -29,9 +29,9 @@ body {
 
 .home-parallax {
     background-image: url("../images/brandi-redd-white-background-large.webp");
-    font-size: 5em;
+    font-size: 3em;
   
-    min-height: 500px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,12 +45,21 @@ body {
 
 .page-title {
     color: var(--headline-color-on-white);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--accent2-color);
+    text-shadow: 0 0 50px black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
     font-size: 2em;
+}
+
+h4 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    font-size: 1.5em;
 }
 
 p {
@@ -72,12 +81,14 @@ ul {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0% 10%;
+    margin: 0% 5%;
 }
 
 .home-grid img {
     border-radius: 50px;
-    margin: 50px 0px;
+    margin: 25px 0px;
+    border: 5px solid var(--accent1-color);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.2); 
 }
 
 .home-grid .home-text {
@@ -96,7 +107,12 @@ header {
 
 .logo {
     width: 7em;
-    padding: 10px;
+    margin: 10px;
+}
+
+.logo:hover {
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); 
+    border-radius: 100%;
 }
 
 nav {
@@ -120,6 +136,7 @@ nav a {
 
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
+    text-shadow: 0 0 50px white;
 }
 
 nav a:hover {
@@ -152,7 +169,12 @@ footer a:hover {
 .social img {
     width: 5em;
     text-align: right;
-    margin-top: 0.5em;
+    margin: 0.5em;
+}
+
+.social img:hover {
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); 
+    border-radius: 100%;
 }
 
 @media (min-width: 768px) {
@@ -179,5 +201,11 @@ footer a:hover {
     }
     footer {
         grid-template-columns: repeat(3, 1fr);
+    }
+    footer .copy {
+        text-align: left;
+    }
+    footer .social {
+        text-align: right;
     }
 }
