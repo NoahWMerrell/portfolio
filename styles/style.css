@@ -43,6 +43,22 @@ body {
     background-size: cover;
 }
 
+.resume-parallax {
+    background-image: url("../images/walkator-code.webp");
+    font-size: 3em;
+  
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .page-title {
     color: white;
     -webkit-text-stroke-width: 1px;
