@@ -216,9 +216,9 @@ footer a:hover {
         grid-row: 1/2;
     }
     .home-grid img {
+        max-width: 100%;
         width: 450px;
         border-radius: 50px;
-        margin: 50px 0px;
     }
     nav {
         grid-template-columns: repeat(3, 1fr);
