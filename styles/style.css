@@ -103,17 +103,18 @@ ul {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0% 5%;
+    place-items: center;
 }
 
 .home-grid img {
+    width: 90%;
     border-radius: 50px;
-    margin: 25px 0px;
+    margin: 5% 0%;
     border: 5px solid var(--accent1-color);
     box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.2); 
 }
 
-.home-grid .home-text {
+.home-grid img, .home-text {
     margin: 5%;
 }
 
@@ -139,9 +140,7 @@ header {
 
 nav {
     background-color: var(--nav-background-color);
-    line-height: 3em;
     text-align: center;
-    font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.25em;
@@ -151,6 +150,8 @@ nav {
 }
 
 nav a {
+    font-size: 1.5em;
+    line-height: 3em;
     min-width: 120px;
     text-decoration: none;
     padding: 0.5em 3em;
@@ -215,6 +216,7 @@ footer a:hover {
         grid-row: 1/2;
     }
     .home-grid img {
+        width: 450px;
         border-radius: 50px;
         margin: 50px 0px;
     }
