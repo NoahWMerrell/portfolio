@@ -59,6 +59,22 @@ body {
     background-size: cover;
 }
 
+.aboutme-parallax {
+    background-image: url("../images/merrell-family.webp");
+    font-size: 3em;
+  
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .page-title {
     color: white;
     -webkit-text-stroke-width: 1px;
@@ -76,12 +92,14 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
     font-size: 2em;
+    margin: 0.5em;
 }
 
 h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
     font-size: 1.5em;
+    margin: 0.5em;
 }
 
 p {
@@ -89,6 +107,7 @@ p {
     color: var(--paragraph-color-on-color);
     padding: 0.25em;
     font-size: 1.5em;
+    margin: 0.5em;
 }
 
 ul {
@@ -98,6 +117,7 @@ ul {
     font-size: 1.5em;
     list-style-type: disc;
     list-style-position: inside;
+    margin: 0.5em;
 }
 
 .home-grid {
@@ -116,6 +136,15 @@ ul {
 
 .home-grid img, .home-text {
     margin: 5%;
+}
+
+.resume-content, .aboutme-content {
+    margin: 2.5% 5%;
+}
+
+.name-date {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -210,6 +239,12 @@ footer a:hover {
     }
     .home-grid {
         grid-template-columns: 1fr 60%;
+    }
+    .name-date {
+        grid-template-columns: 1fr 25%;
+    }
+    .resume-date {
+        text-align: right;
     }
     .home-text {
         grid-column: 2/3;
