@@ -255,6 +255,9 @@ footer a:hover {
         width: 450px;
         border-radius: 50px;
     }
+    .site-plan-link, .copy {
+        margin: 1.25em;
+    }
     nav {
         grid-template-columns: repeat(3, 1fr);
     }
